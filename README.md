@@ -1,69 +1,114 @@
-# Welcome to your Lovable project
+# CrowdHIVE   
+**Hive-Powered Crowdfunding Platform**
+ 
+## 📌 Overview  
+Hive-Powered Crowdfunding Platform is a **decentralized, transparent, and gamified** fundraising platform built on **Hive Blockchain**. It empowers creators to launch projects, receive funding, and engage a community with full transparency.  
 
-## Project info
+## 🌟 Features  
 
-**URL**: https://lovable.dev/projects/45581338-1d5f-4f57-91fa-c56ead18acb5
+### 🔹 **Core Functionality**  
+- ✅ **Decentralized Crowdfunding** – Secure and trustless project funding via Hive blockchain.  
+- ✅ **Hive Authentication** – One-click login using Hive Keychain.  
+- ✅ **Smart Contracts for Transparency** – All transactions are verifiable on Hive.  
+- ✅ **Gamification System** – Users earn rewards, badges, and leaderboard ranks for engagement.  
+- ✅ **AI-Powered Project Recommendations** – Personalized suggestions based on user interests.  
 
-## How can I edit this code?
+### 🎨 **User Experience Enhancements**  
+- ✅ **Dynamic UI Themes** – Light/Dark mode toggle with improved readability.  
+- ✅ **Mobile-Friendly & Responsive** – Optimized for seamless browsing across devices.  
+- ✅ **Live Community Chat & Discussions** – Engage with project creators and funders in real time.  
+- ✅ **Advanced Search & Filtering** – Easily find projects by category, funding goal, or popularity.  
 
-There are several ways of editing your application.
 
-**Use Lovable**
+## 🔗 Tech Stack  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/45581338-1d5f-4f57-91fa-c56ead18acb5) and start prompting.
+| Component       | Technology Used |
+|----------------|----------------|
+| **Frontend**   | HTML, JavaScript, React.js, Typescript, Tailwind CSS |
+| **Backend**    | Node.js, Express.js |
+| **Database**   | Hive Blockchain (Decentralized storage) |
+| **Authentication** | Hive Keychain API |
+| **APIs Used**  | `hive_keychain.requestSignBuffer`, `bridge.get_ranked_posts`, `broadcast.comment` |
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📜 How It Works  
 
-**Use your preferred IDE**
+### **1️⃣ User Authentication**  
+Users sign in securely using **Hive Keychain**. Their account is verified via the Hive blockchain.  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### **2️⃣ Project Creation & Funding**  
+- Creators submit projects with descriptions, funding goals, and rewards.  
+- Backers fund projects using **HIVE tokens**.  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### **3️⃣ Smart Contract Execution**  
+- All transactions are recorded on Hive, ensuring **trust & transparency**.  
+- Funds are **only released upon milestone completion**.  
 
-Follow these steps:
+### **4️⃣ Gamification & Rewards**  
+- Users **earn points and badges** for funding, creating, and sharing projects.  
+- **Leaderboard** displays top contributors in a **visually engaging format**.
 
+## 🚀 Project Overview  
+
+[🔗 **Live Demo**](https://crowdhive.netlify.app/) – Try the working platform now!  
+
+This project is a **decentralized crowdfunding platform** powered by **Hive Blockchain**, allowing users to fund and support projects securely, transparently, and efficiently.  
+
+## 🛠️ Setup & Installation  
+
+### **1️⃣ Prerequisites**  
+Ensure you have:  
+- **Node.js** installed  
+- **Hive Keychain extension**  
+
+### **2️⃣ Clone the Repository**  
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone https://github.com/yourusername/hive-crowdfunding.git
+cd hive-crowdfunding
 ```
 
-**Edit a file directly in GitHub**
+### **3️⃣ Install Dependencies**
+```sh
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### **4️⃣ Start the Development Server**
+```sh
+npm start
+```
 
-**Use GitHub Codespaces**
+### **5️⃣ Connect to Your Hive Account (MANDATORY)**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+You must connect your Hive account via Hive Keychain to access full functionality.
+If you don’t have a Hive account, create one here.
 
-## What technologies are used for this project?
+### **6️⃣ Open in Browser**
+Visit http://localhost:3000 to view the platform.
 
-This project is built with .
+## 🔥 Hive API Integrations  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+| Functionality           | Hive API Used                             |
+|------------------------|-----------------------------------------|
+| Fetch latest projects  | `bridge.get_ranked_posts`               |
+| Post a project        | `broadcast.comment`                     |
+| User Authentication   | `hive_keychain.requestSignBuffer`       |
+| Get user balance      | `condenser_api.get_accounts`            |
+| Send project funding  | `hive_keychain.requestTransfer`         |
+| Fetch transaction history | `account_history_api.get_account_history` |
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/45581338-1d5f-4f57-91fa-c56ead18acb5) and click on Share -> Publish.
+## 📈 Roadmap  
 
-## I want to use a custom domain - is that possible?
+**Phase 1: MVP Completion** – Basic crowdfunding features & Hive authentication.  
+**Phase 2: Gamification & Leaderboard** – Reward system for user engagement.  
+**Phase 3: AI-Powered Recommendations** – Smart project suggestions.  
+**Phase 4: Community Engagement Features** – Live chat, discussion boards, and more.  
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🛡 Security & Privacy  
+
+- All **funding transactions are on-chain** using Hive’s secure APIs.  
+- No personal user data is stored **off-chain**.  
+- Data integrity is maintained using **encryption & decentralized storage**.  
+
+## 📜 License  
+
+This project is **open-source** under the **MIT License**.  
